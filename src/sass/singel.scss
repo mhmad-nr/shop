@@ -1,0 +1,170 @@
+.singel-container {
+    .singel-header-container {
+        .imgs-container {
+            @include wh100;
+            display: flex;
+            flex: wrap;
+            padding: 0;
+            .img-items{
+                cursor: pointer;
+
+            }
+            .imgm {
+                cursor: zoom-in;
+                width: 100%;
+                height: 450px;
+                border: 1px solid $color_dividers;
+            }
+        }
+        .tops-container {
+            padding: 0 0 1rem 1rem;
+            border-bottom: 1px solid $color_dividers;
+            .brand {
+                font-size: 1.8rem;
+                font-weight: 700;
+                font-family: sans-serif !important;
+            }
+            .befor-price { 
+                margin-left: 1rem;
+                font-size: 1.5rem;
+                text-decoration: line-through;
+                font-family: sans-serif !important;
+                font-weight: 700;
+            }
+            .after-price {
+                font-size: 1.5rem;
+                color: rgb(255, 0, 0);
+                font-weight: 700;
+                font-family: sans-serif !important;
+            }
+            .text {
+                margin-right: 0.3rem;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #acacac;
+                font-family: sans-serif !important;
+            }
+        }
+        .bottom-container {
+            padding: 0.6rem;
+            .center {
+                @include df_aic;
+                justify-content: space-between;
+                .guidesize {
+                    background-color: #fbfbfbd9;
+                    color: #000;
+                    padding: 0.35rem 0.8rem;
+                    text-align: center;
+                    border: 1px solid #dadada;
+                    font-size: 15px;
+                }
+                .addtofave {
+                    background-color: #fbfbfbd9;
+                    color: #000;
+                    padding: 0.8rem 3rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid #dadada;
+                    font-size: 15px;
+                    @include df_aic;
+                    justify-content: space-between;
+                }
+                .addtocard {
+                    @extend .addtofave;
+                    color: $color_white;
+                    background-color: #1fc8db;
+                    text-align: center;
+                    border-radius: 4px;
+                    background-image: linear-gradient(141deg, #3bc1ba 0%, #23a8bb 51%, #078dcc 75%);
+                    font-weight: bold;
+                }
+                > p {
+                    font-family: sans-serif !important;
+                    font-size: 1.2rem;
+                    padding: 0.2rem 1.2rem;
+                    border: 1px solid;
+                    font-weight: 700;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .imgs-container {
+        .imgm {
+            height: 380px !important;
+        }
+    }
+}
+    @media screen and (max-width: 768px) {
+    .imgs-container {
+        @include wh100;
+        display: flex;
+        flex: wrap;
+        padding: 0;
+        .img-items{
+            cursor: pointer;
+
+        }
+        .imgm {
+            max-height: 450px !important;
+        }
+    }
+    .tops-container {
+        margin: 1rem 0;
+        padding: 0 !important;
+        .brand {
+            font-size: 1.4rem !important; 
+        }
+        .befor-price {
+            font-size: 1.3rem !important;
+            margin-left: 0.7rem !important;
+        }
+        .after-price {
+            font-size: 1.3rem !important;
+        }
+        .text {
+            font-size: 0.8rem !important;
+        }
+    }
+    .bottom-container {
+        padding: 0 !important;
+        .center {
+            .guidesize {
+                padding: 0.2rem 0.7rem !important;
+                font-size: 12x !important;
+            }
+            .addtocard {
+            position: fixed ;
+            bottom: 0;
+            left: 0;
+            display: flex !important;
+            @include fwh(100% ,auto);
+            padding: 0.8rem !important;
+            border-radius: 0 !important;
+            }
+            > p {
+                font-family: sans-serif !important;
+                font-size: 1.2rem;
+                padding: 0.2rem 1.2rem;
+                border: 1px solid;
+                font-weight: 700;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .imgs-container {
+        .imgm {
+            height: 300px !important;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .imgs-container {
+        .imgm {
+            height: 230px !important;
+        }
+    }
+}

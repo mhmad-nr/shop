@@ -1,0 +1,20 @@
+
+    .icons-container {
+        margin: 3rem 0;
+        .text-center {
+            .title {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+@media screen and (max-width: 500px) {
+    .icons-container {
+        margin: 1rem 0 !important ;
+        .text-center {
+            .title {
+                display: none;
+            }
+        }
+    }
+}

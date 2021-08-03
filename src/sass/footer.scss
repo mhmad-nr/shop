@@ -1,0 +1,107 @@
+.footer-conteiner{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+.footer-first{
+    @include df_jcc;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $color_dividers;
+    display: flex;
+    .img-container{
+       
+    .imgs{
+        border-radius: 10px;
+        width: 100%;
+        
+    }
+    .footer-top{
+        margin-bottom: 0.3rem;
+        
+    }
+}
+    .footer-icons{
+        display: flex;
+        justify-content: space-around;
+       
+        padding:1rem 0.5rem ;
+        >a{
+            >i{
+                font-size: 2rem;
+                color: $color_black;
+            }
+        }
+    }
+    .footer-title{
+        direction: rtl;
+        font-family: $font-yekan;
+    }
+    .footer-email{
+        margin-top: 0.5rem;
+        >input{
+            background: #f1f1f1;
+            direction: rtl;
+            border:none;
+            @include fwh(100% , 35px);
+            border-bottom: 2px solid $color_black;
+            margin-bottom: 0.8rem;
+            outline: none;
+        }
+        >button{
+           @include fwh(100% , 50px);
+            outline: none;
+            font-family: 'Yekan';
+            background: black;
+            color: white;
+            font-size: 1.5rem;
+            border: none;
+        }
+    }
+
+}
+.footer-second{
+    direction: rtl;
+    font-family: $font-nazanin;
+    .top{
+    >h3{
+        margin-bottom: 2rem;
+    }
+    .parag{
+        margin: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+}
+    .footer-nemad{
+        display: flex;
+        justify-content: space-between;
+        .img-footer-buttom{
+            width: 100%;
+        }
+    }
+
+}
+.footer-buttom{
+    font-family: sans-serif;
+    @include df_jcc;
+    >p{
+        text-align: center;
+        margin-top: 3rem;
+        padding:1rem 0;
+        font-size: 1.2rem;
+        color: $color_dividers;
+        >a{
+            color: rgb(65, 65, 199);
+        }
+    }
+}
+}
+@media screen and (max-width: 400px) {
+    .footer-buttom{
+        >p{
+        font-size: 0.9rem !important;
+    
+        }
+    }
+}
+    

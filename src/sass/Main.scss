@@ -1,0 +1,44 @@
+@import "base";
+@import "Layout.scss";
+@import "navBar.scss";
+@import "footer.scss";
+@import "slider.scss";
+@import "brand.scss";
+@import "titlepro.scss";
+@import "proicons.scss";
+@import "products.scss";
+@import "category.scss";
+@import "shopheader.scss";
+@import "shopLayout.scss";
+@import "shopcards.scss";
+@import "singel.scss";
+@import "cart.scss";
+
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ transition: all 0.1s;
+ font-family: $font-nazanin !important;
+}
+body{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+a{
+ color: unset !important;
+ text-decoration: none;
+}
+a:hover{
+    color: unset;
+}
+
+ol,ul ,p{
+ list-style: none;
+    padding: 0;
+    margin: 0;
+}

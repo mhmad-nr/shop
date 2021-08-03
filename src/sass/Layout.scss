@@ -1,0 +1,25 @@
+.navbar-layout-container{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.main-layout-container{
+    position: relative;
+    .main-layout{
+    width: 100%;
+        @include patlrb(103px , 0 ,auto,auto)
+    }
+}
+.footer-layout-container{
+    border-top: 1px solid $color_dividers;
+    background-color: #f1f1f16e;
+}
+@media screen and (max-width: 992px) {
+    .main-layout-container{
+        .main-layout{
+            @include patlrb(40px , 0 ,auto,auto);
+        }
+    }
+}

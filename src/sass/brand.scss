@@ -1,0 +1,18 @@
+.brands-container{
+    display: flex;
+    justify-content: center;
+    .brand-items{
+        >a{
+            width: 100%;
+            >img{
+                width: 100%; filter: opacity(0.5);
+            transition: all 0.2s;
+            }
+            &:hover{
+                >img{
+                filter: none;
+            }
+        }
+        }
+    }
+}

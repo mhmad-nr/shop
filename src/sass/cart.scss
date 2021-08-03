@@ -1,0 +1,192 @@
+.cart-container {
+    .title {
+        padding: 1rem 0;
+        > h3 {
+            font-size: 30px;
+            text-align: center;
+            font-family: $font-yekan !important;
+        }
+    }
+    .btn-top {
+        @include df_aic;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+        .first {
+            font-size: 18px;
+            padding: 0.7rem 6rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: $color_white !important;
+            background-color: #1fc8db;
+            background-image: linear-gradient(141deg, #3bc1ba 0%, #23a8bb 51%, #078dcc 75%);
+        }
+        .second {
+            @extend .first;
+            color: $color_black !important;
+            background-color: rgb(237, 237, 237) !important;
+            background-image: none;
+        }
+    }
+    .top-table {
+        @include fwh(100%, auto);
+        direction: rtl;
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        border-bottom: 1px solid $color_dividers;
+        > th {
+            @include df_jcc_aic;
+            text-align: right;
+            font-family: "YekanBakhW", yekan, "avenir";
+            font-size: 17px;
+            color: #333;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    .empty-container {
+        margin-bottom: 7rem;
+        > div {
+            padding: 4rem 0;
+            border-top: 1px solid $color_dividers;
+            border-bottom: 1px solid $color_dividers;
+            margin-top: 2rem;
+
+            .title {
+                @extend .title;
+                @include df_jcc_aic;
+                margin-bottom: 1rem;
+            }
+            .back-btn {
+                margin-top: 1rem;
+                @include df_jcc;
+                > a {
+                    font-size: 18px;
+                    padding: 0.7rem 6rem;
+                    text-align: center;
+                    margin-bottom: 15px;
+                    color: $color_white !important;
+                    background-color: #1fc8db;
+                    background-image: linear-gradient(141deg, #3bc1ba 0%, #23a8bb 51%, #078dcc 75%);
+                }
+            }
+        }
+    }
+}
+.cart-item {
+    margin-top: 1rem;
+    padding-bottom: 1rem !important;
+    border-bottom: 1px solid $color_dividers;
+    padding: 0 1rem;
+    @include df_aic;
+    flex-wrap: wrap;
+    direction: rtl;
+    > li {
+        @include df_jcc_aic;
+        > a {
+            @include wh100;
+            > img {
+                max-width: 100%;
+                max-height: 180px;
+            }
+        }
+        > p {
+            font-weight: normal;
+            font-size: 20px;
+        }
+        > svg {
+            font-size: 1.65rem;
+            color: #5d5d5d;
+            cursor: pointer;
+            &:active {
+                font-size: 1.5rem;
+                cursor: none;
+            }
+        }
+        .num {
+            font-family: sans-serif !important;
+        }
+    }
+}
+.checkout {
+    .checkout-item {
+        @include df_aic;
+        padding: 0 0.7rem;
+        direction: rtl;
+        justify-content: space-between;
+        > p {
+            margin: 0.5rem 0;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    }
+}
+.divider {
+    @include fwh(100%, 2px);
+    margin: 1rem 0;
+    background-color: $color_dividers;
+}
+@media screen and (max-width: 768px) {
+    .title {
+        padding: 1rem 0.8rem 0 0 !important;
+        > h3 {
+            font-size: 25px !important;
+        }
+    }
+    .btn-top {
+        justify-content: center !important;
+        margin: 1rem 0 !important;
+        .first {
+            font-size: 14px !important;
+            padding: 0.45rem 4rem !important;
+            margin-bottom: 10px !important;
+        }
+        .second {
+            display: none !important;
+        }
+    }
+    .top-table {
+        padding: 0.6rem !important;
+        > th {
+            font-size: 13px !important;
+        }
+    }
+
+    .cart-item {
+        padding: 0 0.5rem !important;
+        > li {
+            justify-content: center;
+            > a {
+                @include df_jcc;
+                > img {
+                    margin-bottom: 1rem;
+                }
+            }
+            > p {
+                font-size: 15px !important;
+            }
+            > svg {
+                font-size: 1.5rem !important;
+                margin: 1rem;
+            }
+        }
+        .tag {
+            font-size: 1.1rem;
+            margin-left: 0.5rem;
+            font-weight: 900;
+            color: rgb(100, 100, 100);
+        }
+    }
+    .checkout {
+        .checkout-item {
+            padding: 0 0.4rem !important;
+            > p {
+                margin: 0.4rem 0 !important;
+                font-size: 13px !important;
+            }
+        }
+        .divider {
+            @include fwh(100%, 1px);
+        }
+    }
+}

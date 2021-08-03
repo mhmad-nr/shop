@@ -1,0 +1,89 @@
+$color_pop: #f1f1f1;
+$color_white: white;
+$color_land:#fff5b7;
+$color_black:#000;
+$color_dark:#2e3233;
+$color_link:rgb(48, 123, 202);;
+$color_dividers:#c3c3c3;
+
+
+//--------------------------------
+
+
+$font-yekan: Yekan, sans-serif;
+$font-nazanin: Nazanin, sans-serif;
+
+//--------------------------------
+@font-face {
+  font-family: Yekan;
+  src: url('../font/navBar/linksfont/BYekan.eot?#iefix') format('embedded-opentype'),
+      url('../font/navBar/linksfont/BYekan.woff2') format('woff2'),
+      url('../font/navBar/linksfont/BYekan.woff') format('woff'),
+      url('../font/navBar/linksfont/BYekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Nazanin;
+  src: url('../font/footer/nazanin/FarNazanin.eot?#iefix') format('embedded-opentype'),
+      url('../font/footer/nazanin/FarNazanin.woff2') format('woff2'),
+      url('../font/footer/nazanin/FarNazanin.woff') format('woff'),
+      url('../font/footer/nazanin/FarNazanin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+//--------------------------------
+
+
+
+
+@mixin df_jcc_aic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin df_jcc {
+  display: flex;
+  justify-content: center;
+
+}
+@mixin df_aic {
+  display: flex;
+  align-items: center;
+}
+@mixin wh100 {
+  width: 100%;
+  height: 100%;  
+}
+@mixin fwh($w, $h) {
+ width: $w;
+ height: $h;
+}
+@mixin patlrb($t, $l,$r :auto,$b:auto) {
+  position: absolute;
+  top: $t;
+  left: $l;
+  right: $r;
+  bottom: $b;
+ }
+ .dfaitc{
+   display: flex;
+   align-items: center;
+ }
+ .dfjcc{
+   display: flex;
+   justify-content: center;
+ }
+ .dfjccaic{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+

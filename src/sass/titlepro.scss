@@ -1,0 +1,109 @@
+.titlepro-item{
+    >a{
+        @include wh100;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        >a{
+            position: relative;
+        }
+        .texts{
+            @include patlrb(auto ,0 ,auto,20px);
+            width: 100%;
+            text-align: center;
+            >h1{
+                font-family: sans-serif !important;
+                font-weight: 700;
+                font-size: 50px;
+                color:  $color_white;
+                text-shadow:
+                1px  1px 0 $color_dark,
+                -1px -1px 0 $color_dark,  
+                1px -1px 0 $color_dark,
+                -1px  1px 0 $color_dark,
+                1px  1px 0 $color_dark;
+                margin-bottom: 0 !important;
+            }
+            >p{
+                font-size: 27px;
+                font-weight: 700;
+                color:  $color_white;
+                text-shadow:
+                1px  1px 0 $color_dark,
+                -1px -1px 0 $color_dark,  
+                1px -1px 0 $color_dark,
+                -1px  1px 0 $color_dark,
+                1px  1px 0 $color_dark;
+            }
+        }
+        .img-title{
+            width: 100%;
+            
+        }
+        .span-ver{
+            width: 7rem;
+            height: 0.6rem;
+            background-color: $color_black;
+            transition: all 0.3s;
+        }
+        .span-hor{
+            @extend .span-ver;
+            width: 0.6rem;
+            height: 7rem;
+            
+        }
+        .top-top{
+            @include patlrb(-0.6rem ,auto ,-0.6rem ,auto);
+        }
+        .top-right{
+            @include patlrb(-0.6rem ,auto ,-0.6rem ,auto);
+        }
+        .bottom-bottom{
+            @include patlrb(auto ,-0.6rem ,auto ,-0.6rem);
+        }
+        .bottom-left{
+            @include patlrb(auto ,-0.6rem ,auto ,-0.6rem);
+        }
+        &:hover{
+            filter: grayscale(0.5);
+            .top-top{
+                top:0;
+                right:0;
+            }
+            .top-right{
+                @extend .top-top;
+            }
+            .bottom-bottom{
+                bottom:0;
+                left:0
+            }
+            .bottom-left{
+                @extend .bottom-bottom;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titlepro-item:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .titlepro-item{
+        >a{
+            .texts{
+                >h1{
+                    font-size: 25px !important;
+                }
+                >p{
+                    font-size: 20px !important;
+                }
+            }
+        
+          
+        }
+    }
+}
